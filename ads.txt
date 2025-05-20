@@ -1,1 +1,2 @@
 google.com, pub-YOUR_ADSENSE_ID, DIRECT, f08c47fec0942fa0
+Adsense_ID=ca-app-pub-2539575351912022/4686620355

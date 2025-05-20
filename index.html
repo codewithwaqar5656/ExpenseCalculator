@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Online Daily Home Expenses Calculator - Track and manage your household budget with our easy-to-use expense tracker tool.">
+    <meta name="keywords" content="expense calculator, daily expenses, home budget, money tracker, personal finance">
+    <meta name="author" content="Expense Tracker">
+    <meta property="og:title" content="Daily Home Expenses Calculator">
+    <meta property="og:description" content="Track and manage your household budget with our free online expense calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/expense-calculator">
+    <link rel="canonical" href="https://yourusername.github.io/expense-calculator">
+    <title>Daily Home Expenses Calculator | Free Online Budget Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Daily Home Expenses Calculator",
+      "url": "https://yourusername.github.io/expense-calculator",
+      "description": "Free online tool to track and manage your daily home expenses",
+      "applicationCategory": "FinanceApplication"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Daily Home Expenses Calculator</h1>
+            <p>Track and manage your household budget efficiently</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- AdSense Ad -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <article class="intro">
+            <h2>Why Use Our Expense Calculator?</h2>
+            <p>Managing your daily home expenses is crucial for financial health. Our free online calculator helps you track spending, identify patterns, and stay within budget.</p>
+        </article>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="add-expense">Add Expense</div>
+            <div class="tab" data-tab="view-expenses">View Expenses</div>
+            <div class="tab" data-tab="analytics">Analytics</div>
+        </div>
+
+        <section id="add-expense" class="tab-content active">
+            <div class="form-container">
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" required>
+                            <option value="">Select a category</option>
+                            <option value="Food">Food</option>
+                            <option value="Transport">Transport</option>
+                            <option value="Utilities">Utilities</option>
+                            <option value="Groceries">Groceries</option>
+                            <option value="Misc">Miscellaneous</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount ($)</label>
+                        <input type="number" id="amount" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Notes (Optional)</label>
+                        <textarea id="notes" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Add Expense</button>
+                    <button type="button" id="reset-btn" class="btn btn-danger">Reset All</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="view-expenses" class="tab-content">
+            <div class="table-responsive">
+                <table class="expenses-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Notes</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenses-list">
+                        <!-- Filled by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="total-section">
+                Total Expenses: <span class="total-amount" id="total-amount">$0.00</span>
+            </div>
+            <button id="export-btn" class="btn">Export to CSV</button>
+        </section>
+
+        <section id="analytics" class="tab-content">
+            <div class="chart-container">
+                <canvas id="expense-chart"></canvas>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Visual Analytics</h3>
+                    <p>Beautiful charts to understand your spending patterns</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Private & Secure</h3>
+                    <p>Your data never leaves your browser</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Export Data</h3>
+                    <p>Download your expenses as CSV for record keeping</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Ad -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Daily Home Expenses Calculator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
